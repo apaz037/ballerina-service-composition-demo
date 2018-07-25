@@ -1,6 +1,10 @@
 import ballerina/http;
 import ballerinax/docker;
 
+@docker:Config {
+    registry: ""
+}
+
 // service endpoint
 endpoint http:Listener travelAgencyEP {
     port: 9090
